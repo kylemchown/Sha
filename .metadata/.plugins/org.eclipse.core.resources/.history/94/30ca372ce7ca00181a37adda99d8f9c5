@@ -1,0 +1,7 @@
+package com.qa.StaticTest;
+
+import junit.framework.TestCase;
+
+public class TestStatic extends TestCase {
+
+}

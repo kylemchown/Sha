@@ -1,0 +1,17 @@
+package com.qa.StaticTest;
+
+import org.junit.Test;
+
+import junit.framework.TestCase;
+
+public class TestStatic extends TestCase {
+
+	
+	@Test
+	public void setA(){
+		Bank a = Bank.create();
+		Bank b = Bank.create();
+		a.a = 11111;
+		assertEquals(11111, b.a);
+	}
+}

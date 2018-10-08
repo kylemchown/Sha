@@ -1,0 +1,27 @@
+package com.qa.StaticTest;
+
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+
+public class TestStatic {
+	public Bank a;
+	public Bank b;
+	
+	@Before
+	public void setup() {
+		a = Bank.create();
+		b = Bank.create();
+	}
+	
+	@Test
+	public void setA(){
+
+		a.a = 11111;
+		assertEquals(11111, b.a);
+	}
+	
+	
+}

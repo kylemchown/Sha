@@ -1,0 +1,16 @@
+package com.qa.StaticTest;
+
+public class Runner {
+
+	public static void main(String[] args) {
+		Bank as = Bank.create();
+		Bank zx = Bank.create();
+		
+		System.out.println(as.sta);
+		System.out.println(zx.sta);
+		as.sta = 50;
+		System.out.println(as.sta);
+		System.out.println(zx.sta);
+	}
+
+}

@@ -1,0 +1,17 @@
+package com.qa.StaticTest;
+
+public class Bank {
+	int a;
+	static Bank x;
+	static {
+		x = new Bank();
+	}
+	
+	private Bank() {
+		a = 30;
+	}
+	
+	public static Bank create() {
+		return x;
+	}
+}

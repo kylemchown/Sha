@@ -1,0 +1,16 @@
+package com.qa.StaticTest;
+
+public class Bank {
+	static Bank x;
+	static {
+		x = new Bank();
+	}
+	
+	private Bank() {
+		
+	}
+	
+	public static Bank create() {
+		return x;
+	}
+}

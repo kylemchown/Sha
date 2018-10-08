@@ -1,0 +1,17 @@
+package com.qa.StaticTest;
+
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+public class TestStatic {
+
+	
+	@Test
+	public void setA(){
+		Bank a = Bank.create();
+		Bank b = Bank.create();
+		a.a = 11111;
+		assertEquals(11111, b.a);
+	}
+}
